@@ -40,8 +40,8 @@ class Intercom_empty(Intercom_DFC):
         indata = signs | magnitudes
         
         self.NOBPTS = int(0.75*self.NOBPTS + 0.25*self.NORB)
-        self.NOBPTS += self.zeros
         self.zeros = 0
+        self.NOBPTS += self.zeros
         self.NOBPTS += 1
 
 
